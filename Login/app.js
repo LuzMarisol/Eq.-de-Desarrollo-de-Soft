@@ -6,9 +6,10 @@ function ingreso() {
         .then(function () {
             /*verificar();*/
             console.log("Sesión iniciada");
+            alert("Sesión Iniciada Correctamente")
         })
         .catch(function (error) {
-            alert("Realiza tu registro para poder iniciar sesión")
+            alert("Contacta con algún administrador para registrarte en el sistema. Gracias.")
             var errorCode = error.code;
             var errorMessage = error.message;
             console.log(errorCode);
